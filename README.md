@@ -27,3 +27,9 @@ This is a "Copy Address" button for TCGPlayer Admin Orders
 	</div>
 </div>		
 ```
+
+## 
+
+```
+zip -vr firefox-cp-pasta . -x "*.git/*" -x "LICENSE" -x "README.md" -x "*.DS_Store" -x "*.gitignore"
+```
