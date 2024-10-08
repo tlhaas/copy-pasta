@@ -12,3 +12,6 @@
 	box-shadow: 0 0 0 1px #0e5b93;
 	height: 27px;
 }
+#taco-button:hover {
+	background: #006cd9;
+}

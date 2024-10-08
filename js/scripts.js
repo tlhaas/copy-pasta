@@ -1,9 +1,12 @@
 window.addEventListener('load', function() {
+	var addressDiv = document.getElementsByClassName("address-compact")[0]
 	var button = document.createElement("button");
 	button.textContent = "Copy Address";
 	button.id = "taco-button";
 	button.addEventListener("click", () => writeClipboardText());
-	document.getElementsByClassName("address-compact")[0].appendChild(button);
+	
+	addressDiv.appendChild(button);
+
 });
 
 async function writeClipboardText() {
@@ -13,6 +16,14 @@ async function writeClipboardText() {
 	} catch (error) {
 		console.error(error.message);
 	}
+	
+	// We need a visual cue that the address was copied
+	var element = document.getElementById('taco-button');
+    element.textContent = "Copied!";
+    
+    setTimeout(function() {
+      element.textContent = "Copy Address";
+    }, 500);  
 }
 
 function getAddress()
