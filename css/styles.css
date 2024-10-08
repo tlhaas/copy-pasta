@@ -1,0 +1,14 @@
+#taco-button {
+	border: 1px solid #06c;
+	border-radius: 3px;
+	display: inline-block;
+	padding: 6px 10px;
+	margin: 10px 10px 10px 0px;
+	text-decoration: none;
+	color: #fff;
+	font: 12px Helvetica,Arial,sans-serif;
+	cursor: pointer;
+	background: #06c;
+	box-shadow: 0 0 0 1px #0e5b93;
+	height: 27px;
+}
